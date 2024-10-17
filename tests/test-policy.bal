@@ -5,7 +5,7 @@ import choreo/mediation;
 @test:Config{}
 function testBasicAuthSuccess() {
     http:Request req = new;
-    string creds = "YWRtaW46YWRtaW4K=";
+    string creds = "admin:admin".toBytes().toBase64();
     req.setHeader("Authorization", string `Basic ${creds}`);
 
     mediation:Context ctx = createContext("POST", "/test/auth");

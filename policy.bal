@@ -58,6 +58,7 @@ public function authenticate(mediation:Context ctx, http:Request req, string use
     }
 
     if userNamePass[0] == username && userNamePass[1] == password {
+        req.removeHeader("Authorization");
         return;
     }
 
