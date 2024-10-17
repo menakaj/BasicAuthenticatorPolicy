@@ -2,4 +2,4 @@
 
 ## Overview
 
-This policy provides capability for enabling basic authentication for an pai
+This policy provides capability for enabling basic authentication for an API
